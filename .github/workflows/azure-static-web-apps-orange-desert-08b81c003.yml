@@ -30,7 +30,7 @@ jobs:
         uses: actions/github-script@v6
         id: idtoken
         with:
-          script: |
+          script:
             const coredemo = require('@actions/core')
             return await coredemo.getIDToken()
           result-encoding: string
